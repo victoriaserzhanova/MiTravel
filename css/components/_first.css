@@ -1,0 +1,117 @@
+.first {
+	height: 100vh;
+	min-height: 600px;
+	background-image: url('../../img/first-bg.jpg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: var(--white-color);
+}
+
+.first__container {
+	position: relative;
+	height: 100%;
+	padding-top: 223px;
+	padding-bottom: 200px;
+}
+
+.first__link {
+	background-color:rgb(28,46,61,0.4);
+	font-size: 11px;
+	font-weight: 800;
+	letter-spacing: 2px;
+	padding: 15px 30px;
+	border-radius: 100px;
+	text-transform: uppercase;
+	display: inline-block;
+	margin-bottom: 42px;
+}
+
+.first__title {
+	font-size: 80px;
+	font-weight: 700;
+	line-height: 84px;
+	max-width: 40%;
+	margin-bottom: 42px;
+	margin-bottom: 41px;
+}
+
+.first__descr {
+	font-family: 'SFCompactText', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 16px;
+	max-width: 32%;
+	margin-bottom: 60px;
+}
+
+.first__btn {
+	font-size: 12px;
+	font-weight: 800;
+	line-height: 1;
+	letter-spacing: 2px;
+	padding: 33px 80px;
+	text-transform: uppercase;
+	border-radius: 8px;
+	color: var(--white-color);
+	background-color: var(--accent-color);
+}
+
+.first__bottom {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 0;
+	width: calc(100% - 60px);
+	display: flex;
+	align-items: flex-end;
+}
+
+.search-form {
+	flex-shrink: 0;
+	width: 68%;
+	position: relative;
+	overflow: hidden;
+	border-top-left-radius: 4px;
+	height: 120px;
+}
+
+.search-form__field {
+	border: none;
+	background-color: #ffffff;
+	width: 100%;
+	height: 100%;
+	color: var(--dark-color);
+	padding-left: 55px;
+	padding-right: 90px;
+}
+
+.search-form__btn {
+	width: 18px;
+	height: 18px;
+	background-image: url('../../img/search.svg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	right: 62px;
+
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.main-slider {
+	overflow: hidden;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+}
+
+.main-slider__text {
+	height: 120px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--neptune-color);
+	text-transform: uppercase;
+	color: var(--white-color);
+}
