@@ -8,7 +8,6 @@
     overflow: hidden;
 }
 
-
 .flex {
 	display: flex;
 }
@@ -20,9 +19,33 @@
 	padding: 0;
 }
 
+.btn {
+	padding: 33px 80px;
+	font-size: 12px;
+	font-weight: 800;
+	line-height: 1;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	border-radius: 8px;
+	color: var(--white-color);
+	background-color: var(--accent-color);
+}
+
 input[type="search"]::-webkit-search-decoration,
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-results-button,
 input[type="search"]::-webkit-search-results-decoration {
   display: none;
+}
+
+.section-title {
+	font-weight: 700;
+	font-size: 64px;
+	line-height: 80px;
+	color: var(--dark-color);
+}
+
+.section-title--center {
+	text-align: center;
+	max-width: none;
 }
