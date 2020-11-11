@@ -106,6 +106,8 @@ module.exports = {
 		new MiniCssExtractPlugin(),
 	],
 
+	
+
 	optimization: {
 		minimizer: [
 			new CssMinimizerWebpackPlugin(),
