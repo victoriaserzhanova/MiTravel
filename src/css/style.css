@@ -4,7 +4,6 @@
 @import "vendor.css";
 @import "global.css";
 @import "overall.css";
-@import "swiper-bundle.min.css";
 /* components imports */
 @import "./components/header.css";
 @import "./components/first.css";
