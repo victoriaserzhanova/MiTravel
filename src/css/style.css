@@ -4,8 +4,8 @@
 @import "vendor.css";
 @import "global.css";
 @import "overall.css";
-@import "../node_modules/swiper/swiper-bundle.min.css";
 /* components imports */
+@import "./components/swiper-bundle.min.css";
 @import "./components/header.css";
 @import "./components/first.css";
 @import "./components/become.css";
