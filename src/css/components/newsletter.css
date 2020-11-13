@@ -70,4 +70,9 @@ text-transform: uppercase;
 	margin-top: 66px;
 	border-top-right-radius: 0;
 	border-bottom-left-radius: 8px;
+	transition: background-color 0.3s;
+}
+
+.subscribe-form__btn:hover {
+		background-color: var(--neptune-hover-color);
 }
