@@ -17,96 +17,61 @@ module.exports = {
 	output : {
 		filename: 'main.js',
 		path: path.resolve(__dirname, 'dist'),
-		// assetModuleFilename: 'assets/[name][ext]',
+		publicPath: './',
+		// assetModuleFilename: 'assets/[hash][ext][query]',
 	},
-	//     default path @
-	// resolve: {
-	// 	alias: {
-	//		'@': path.resolve(__dirname, 'src')
-	// 	}
-	// },
 
 	module: {
 		rules: [
 
-			// {
-			// 	test: /\.html$/,
-			// 	use: [
-			// 		{
-			// 		loader: 'html-loader',
-			// 		options: {
-			// 			publicPath: ''
-			// 		},
-			// 	},
-			// 	],
-			// },
+			{
+			test: /\.html$/,
+			use: 'html-loader'
+			},
+
 			{
 				test: /\.css$/,
 				use: [
 					{
 					loader: MiniCssExtractPlugin.loader, //instead of style-loader
 					options: {
-						publicPath: ''
-					},
+						publicPath: './'
+						},
 					},
 					'css-loader'
 					],
 			},
 
-			// {
-			// 	test: /\.svg$/,
-			// 	use: [
-			// 		'url-loader'
-			// 	],
-			// },
-
 			{
 				test: /\.(png|jpg|gif|svg)$/,
 				type: 'asset/resource',
-				generator: {
-					filename: 'assets/images/[name][ext]',
-				},
-				// use: [
-				// 	'file-loader'
-				// ]
+				// generator: {
+				// 	filename: 'images/[hash][ext][query]'
+				// }
 			},
-
-			// {
-      //   test: /\.html$/,
-      //   use: [
-			// 		{
-			// 			loader: 'html-loader',
-			// 			// options: {
-			// 			// 				publicPath: ''
-			// 			// 			},
-			// 		}
-      //   ]
-			// },
 
 			{
 				test: /\.(ttf|woff|woff2|eot|otf)$/,
 				type: 'asset/resource',
-				generator: {
-					filename: 'assets/fonts/[name][ext]',
-				},
-				// use: ['file-loader']
 			},
 		],
 	},
 
 	plugins:
 	[
+		new CleanWebpackPlugin({
+			cleanStaleWebpackAssets: false
+		}),
+
 		new HTMLWebpackPlugin({
 			template: path.resolve(__dirname, 'src/index.html'),
 			minify: {
 				collapseWhitespace: IS_PROD,
 			}
 		}),
-		new CleanWebpackPlugin(),
+
 		new MiniCssExtractPlugin(),
 	],
-
-	
 
 	optimization: {
 		minimizer: [
@@ -115,9 +80,8 @@ module.exports = {
 		],
 	},
 
-	// serve: {
-	// 	port: 4200,
-	// 	open: true,
-	// 	hot: IS_DEV,
-	// }
-};
+	devServer: {
+		port: 3000,
+		hot: true,
+	}
+}
