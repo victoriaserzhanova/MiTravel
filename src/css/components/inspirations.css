@@ -41,6 +41,7 @@ margin-bottom: 95px;
 	background-repeat: no-repeat;
 	display: flex;
 	align-items: flex-end;
+	overflow: hidden;
 }
 
 .inspirations__item::after {

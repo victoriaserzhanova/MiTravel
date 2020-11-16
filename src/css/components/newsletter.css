@@ -52,14 +52,19 @@ font-family: 'SFCompactText', sans-serif;
 
 .subscribe-form__field {
 	width: calc(100% - (72px*2));
-	border-bottom: 1px solid rgba(28, 46, 61, 0.3);
 	min-height: 38px;
 	padding: 26px 0;
 	font-size: 11px;
-line-height: 13px;
-letter-spacing: 2px;
-color: var(--dark-color);
-text-transform: uppercase;
+	line-height: 13px;
+	letter-spacing: 2px;
+	color: var(--dark-color);
+	text-transform: uppercase;
+	border: none;
+	border-bottom: 1px solid rgba(28, 46, 61, 0.3);
+}
+
+.subscribe-form__field::placeholder {
+	color: var(--dark-color);
 }
 
 .subscribe-form__btn {
@@ -67,9 +72,9 @@ text-transform: uppercase;
 	min-height: 96px;
 	width: 100%;
 	padding: 41px 80px;
-	margin-top: 66px;
+	margin-top: 72px;
 	border-top-right-radius: 0;
-	border-bottom-left-radius: 8px;
+	border-top-left-radius: 0;
 	transition: background-color 0.3s;
 }
 

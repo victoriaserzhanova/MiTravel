@@ -1,7 +1,6 @@
 @import "normalize.css";
 @import "fonts.css";
 @import "variables.css";
-@import "vendor.css";
 @import "global.css";
 @import "overall.css";
 /* components imports */
@@ -14,3 +13,4 @@
 @import "./components/inspirations.css";
 @import "./components/footer.css";
 
+@import "media.css";
