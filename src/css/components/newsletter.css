@@ -14,8 +14,20 @@
 	padding: 338px var(--newsletter-gap) 177px;
 }
 
+.newsletter__content::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(28, 46, 61, 0.46);
+	;
+}
+
 .newsletter__text {
 	max-width: 370px;
+	z-index: 50;
 }
 
 .newsletter__title {
@@ -35,6 +47,7 @@ font-family: 'SFCompactText', sans-serif;
 
 .newsletter__form {
 	position: absolute;
+	z-index: 50;
 	bottom: -96px;
 	right: var(--newsletter-gap);
 }
