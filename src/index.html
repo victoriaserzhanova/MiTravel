@@ -7,8 +7,8 @@
 </head>
 <body>
     <div class="site-container">
-			<!-- <div class="menu">
-				<button class="menu__btn btn-reset" aria-label="close menu">
+			<div class="menu">
+				<button class="menu__close btn-reset" aria-label="close menu">
 					<span class="menu__close-line"></span>
 					<span class="menu__close-line"></span>
 				</button>
@@ -32,7 +32,7 @@
 						</li>
 					</ul>
 				</nav>
-			</div> -->
+			</div>
 
 			<header class="header">
 					<div class="container header__container flex">
@@ -74,12 +74,14 @@
 								<button type="submit" class="search-form__btn btn-reset" aria-label="Search stories"></button>
 							</form>
 
-							<!-- <div class="first__slider main-slider">
-								<div class="swiper-container">
+							<div class="first__slider main-slider">
+								<button class="first__slider-btn btn-reset first__slider-btn--prev"></button>
+								<button class="first__slider-btn btn-reset first__slider-btn--next"></button>
+								<div class="swiper-container first__swiper-container">
 									<div class="swiper-wrapper">
-										<div class="swiper-slide">
+										<div class="swiper-slide first__swiper-slide">
 											<div class="main-slider__media">
-												<img src="img/slider1.jpg" alt="Mountains">
+												<img class="main-slider__img" src="img/slider1.jpg" alt="Mountains">
 											</div>
 
 											<p class="main-slider__text">
@@ -87,11 +89,29 @@
 											</p>
 										</div>
 
-										<div class="swiper-slide"></div>
-										<div class="swiper-slide"></div>
+										<div class="swiper-slide first__swiper-slide">
+											<div class="main-slider__media">
+												<button class="main-slider__play btn-reset"></button>
+												<video class="main-slider__video" src="img/first-video.mp4" muted playsinline></video>
+											</div>
+
+											<p class="main-slider__text">
+												wonderful mountain
+											</p>
+										</div>
+
+										<div class="swiper-slide first__swiper-slide">
+											<div class="main-slider__media">
+												<img class="main-slider__img" src="img/slider1.jpg" alt="Mountains">
+											</div>
+
+											<p class="main-slider__text">
+												wonderful mountain
+											</p>
+										</div>
 									</div>
 								</div>
-							</div> -->
+							</div>
 						</div>
 					</div>
 				</section>
@@ -207,28 +227,28 @@
 
 				<section class="gallery">
 					<div class=" gallery-container">
-						<h2 class="gallery__title section-title section-title--center">Featured Videos</h2>
+						<h2 class="gallery__title section-title section-title--center">Featured Pictures</h2>
 
 						<p class="gallery__description">
 							The state of Utah in the United States is home to lots of beautiful National Parks, & Bryce Canyon National Park ranks as three of the most magnificent & awe inspiring.
 						</p>
 
-						<div class="swiper-container">
+						<div class="swiper-container gallery__swiper-container">
 							<div class="swiper-wrapper">
-								<div class="swiper-slide slide-1">
-									<h3 class="slide-title">A Guide To Rocky Mountain Vacations</h3>
+								<div class="swiper-slide gallery__swiper-slide gallery__swiper-slide--1">
+									<h3 class="slide-title gallery__swiper-title">A Guide To Rocky Mountain Vacations</h3>
 								</div>
-								<div class="swiper-slide slide-2">
-									<h3 class="slide-title">A Guide To Rocky Mountain Vacations</h3>
+								<div class="swiper-slide gallery__swiper-slide gallery__swiper-slide--2">
+									<h3 class="slide-title gallery__swiper-title">A Guide To Rocky Mountain Vacations</h3>
 								</div>
-								<div class="swiper-slide slide-3">
-									<h3 class="slide-title">A Guide To Rocky Mountain Vacations</h3>
+								<div class="swiper-slide gallery__swiper-slide gallery__swiper-slide--3">
+									<h3 class="slide-title gallery__swiper-title">A Guide To Rocky Mountain Vacations</h3>
 								</div>
-								<div class="swiper-slide slide-4">
-									<h3 class="slide-title">A Guide To Rocky Mountain Vacations</h3>
+								<div class="swiper-slide gallery__swiper-slide gallery__swiper-slide--4">
+									<h3 class="slide-title gallery__swiper-title">A Guide To Rocky Mountain Vacations</h3>
 								</div>
 							</div>
-							<div class="swiper-pagination"></div>
+							<div class="swiper-pagination gallery__swiper-pagination"></div>
 							<button class="swiper-button-prev"></button>
 							<button class="swiper-button-next"></button>
 						</div>

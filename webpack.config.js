@@ -43,7 +43,7 @@ module.exports = {
 			},
 
 			{
-				test: /\.(png|jpg|gif|svg)$/,
+				test: /\.(png|jpg|gif|svg|mp4)$/,
 				type: 'asset/resource',
 				// generator: {
 				// 	filename: 'images/[hash][ext][query]'
